@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+body {
+  user-select: none;
+  overflow: hidden;
+  font-family: sans-serif;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+carousel {
+  width: 100%;
+  text-align: center;
+  font-family: Trebuchet MS;
+  display: block;
+  font-size: 5vmin;
+}
+carousel page {
+  position: absolute;
+  top: 2em;
+  left:   0;
+  width: 100%;
+  transition: transform 0.5s;
+  transform: scale(0);
+}
+
+carousel page div {
+  padding: 0 3em;
+  margin-bottom: 20px !important;
+}
+carousel page label {
+  cursor: pointer;
+  background: #d9ff4f00;
+  border-radius: 10px;
+  text-decoration: underline;
+  color: white;
+  padding: 1em 2em;
+  margin-top: 10px;
+}
+carousel #i0:checked ~ #page0 {
+  transform: scale(1);
+}
+carousel #i1:checked ~ #page1 {
+  transform: scale(1);
+}
+carousel #i2:checked ~ #page2 {
+  transform: scale(1);
+}
+carousel #i3:checked ~ #page3 {
+  transform: scale(1);
+}
+carousel #i4:checked ~ #page4 {
+  transform: scale(1);
+}
+carousel #i5:checked ~ #page5 {
+  transform: scale(1);
+}
+carousel #i6:checked ~ #page6 {
+  transform: scale(1);
+}
+carousel #i7:checked ~ #page7 {
+  transform: scale(1);
+}
+carousel #i8:checked ~ #page8 {
+  transform: scale(1);
+}
+carousel #i9:checked ~ #page9 {
+  transform: scale(1);
+}
+carousel #i10:checked ~ #page10 {
+  transform: scale(1);
+}
+carousel #i11:checked ~ #page11 {
+  transform: scale(1);
+}
+
+carousel div {
+color: white;
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.298);
+backdrop-filter: blur(11.6px);
+-webkit-backdrop-filter: blur(11.6px);
+border: 1px solid rgba(255, 255, 255, 1);
+max-width: 60%;
+margin: 0 auto;
+}
+
+
+h3 {
+  letter-spacing: 5px;
+  text-decoration: double black 1px;
+  text-transform: uppercase;
+}
+
+.wave {
+background: rgba(69, 118, 186, 0.468);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.7px);
+-webkit-backdrop-filter: blur(4.7px);
+border: 1px solid rgba(255, 255, 255, 0.871);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 10em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
